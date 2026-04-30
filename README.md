@@ -20,11 +20,11 @@ Como usar
 git clone https://github.com/DBTxx/RA-script.git
 
 Dê permissão de execução ao script:
-chmod +x WorkScript.sh
+chmod +x redscan3.sh
 Execute passando a opção desejada:
 
 Execução
-./WorkScript.sh 1
+./redscan3.sh 1
 (onde 1 corresponde à análise de XSS, por exemplo)
 
 Arquivo de log access.log do Apache2
