@@ -33,7 +33,5 @@ Execução
 ./redscan3-1.sh -a <ARQUIVO DE LOG>
 (onde -a corresponde à análise de XSS, por exemplo)
 
-Arquivo de log access.log do Apache2
-
 Autor
 Desenvolvido por Diego para a disciplina de Análise de logs e shellscript – RedScan Academy - Turma-12.
