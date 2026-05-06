@@ -35,7 +35,7 @@ Example:
 ## How to Use
 
 1. Clone this repository:  
-   `git clone https://github.com/DBTxx/RA-script.git`
+   `git clone https://github.com/DBTxx/RedScanAcademy-tools`
 
 2. Give execution permission to the script:  
    `chmod +x redscan3-1.sh`
