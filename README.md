@@ -41,7 +41,7 @@ Example:
    `chmod +x redscan3-1.sh`
 
 3. Run it with the desired option:  
-   `./redscan3-1.sh -a`  
+   `./redscan3-1.sh -a <LOG FILE>`  
    (where `-a` corresponds to XSS analysis, for example)
 
 ---
