@@ -1,6 +1,6 @@
-# Apache2 Log Analysis Script
+#Log Analysis Script
 
-This repository contains a Bash script for analyzing Apache2 server logs.  
+This repository contains a Bash script for analyzing server logs.  
 The goal is to identify patterns that may indicate attack attempts or suspicious access.
 
 ## Features
