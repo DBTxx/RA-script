@@ -1,37 +1,51 @@
-Script de Análise de Logs Apache2
+# Apache2 Log Analysis Script
 
-Este repositório contém um script em Bash para análise de logs do servidor Apache2.  
-O objetivo é identificar padrões que podem indicar tentativas de ataque ou acessos suspeitos.
+This repository contains a Bash script for analyzing Apache2 server logs.  
+The goal is to identify patterns that may indicate attack attempts or suspicious access.
 
-  Funcionalidades:
-       Uso: ./script.sh <Opcao> <Arquivo de log>
-       Ex: ./redscan3-1.sh -a access.log
-       OPÇÕES DE USO:
-      -a - Detectar possíveis ataques de XSS (Cross-Site Scripting)
-      -b - Detectar tentativas de SQL Injection
-      -c - Detectar varredura de diretórios (Directory Traversal)
-      -d - Detectar possíveis ataques por scanners (User-Agent suspeito)
-      -e - Identificar tentativas de acesso a arquivos sensíveis
-      -f - Detectar possíveis ataques de força bruta a arquivos/pastas
-      -g - Primeiro e ultimo acesso de um IP suspeito
-      -h - Localizar user-agent utilizado por um IP suspeito
-      -i - Listar os ips e verificar quantidade de requisições
-      -j - Localizar acesso a um determinado arquivo sensível
-      =====IMPORTANTE===== 
-      Passar o IP para as opcões -g e -h
-      Ex:./redscan3-1.sh <OPCÃO> <IP> <ARQUIVO_DE_LOG>
+## Features
 
-Como usar
-1. Clone este repositório:
-git clone https://github.com/DBTxx/RA-script.git
+**Usage:**  
+`./script.sh`  
 
-Dê permissão de execução ao script:
-chmod +x redscan3-1.sh
-Execute passando a opção desejada:
+**Example:**  
+`./redscan3-1.sh -a access.log`
 
-Execução
-./redscan3-1.sh -a <ARQUIVO DE LOG>
-(onde -a corresponde à análise de XSS, por exemplo)
+### Options
 
-Autor
-Desenvolvido por Diego para a disciplina de Análise de logs e shellscript – RedScan Academy - Turma-12.
+- **-a** – Detect possible XSS (Cross-Site Scripting) attacks  
+- **-b** – Detect SQL Injection attempts  
+- **-c** – Detect directory traversal attempts  
+- **-d** – Detect possible scanner attacks (suspicious User-Agent)  
+- **-e** – Identify attempts to access sensitive files  
+- **-f** – Detect possible brute-force attacks on files/folders  
+- **-g** – Show first and last access of a suspicious IP  
+- **-h** – Locate the User-Agent used by a suspicious IP  
+- **-i** – List IPs and check the number of requests  
+- **-j** – Locate access to a specific sensitive file  
+
+**===== IMPORTANT =====**  
+You must provide the IP for options **-g** and **-h**.  
+
+Example:  
+`./redscan3-1.sh <OPTION> <LOG_FILE>`
+
+---
+
+## How to Use
+
+1. Clone this repository:  
+   `git clone https://github.com/DBTxx/RA-script.git`
+
+2. Give execution permission to the script:  
+   `chmod +x redscan3-1.sh`
+
+3. Run it with the desired option:  
+   `./redscan3-1.sh -a`  
+   (where `-a` corresponds to XSS analysis, for example)
+
+---
+
+## Author
+
+Developed by **Diego** for the course *Log Analysis and Shell Script – RedScan Academy - Class 12*.
