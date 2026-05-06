@@ -9,7 +9,7 @@ The goal is to identify patterns that may indicate attack attempts or suspicious
 `./script.sh`  
 
 **Example:**  
-`./redscan3-1.sh -a access.log`
+`./redscan3-1.sh -a <LOG FILE>`
 
 ### Options
 
@@ -28,7 +28,7 @@ The goal is to identify patterns that may indicate attack attempts or suspicious
 You must provide the IP for options **-g** and **-h**.  
 
 Example:  
-`./redscan3-1.sh <OPTION> <LOG_FILE>`
+`./redscan3-1.sh <OPTION> <IP> <LOG_FILE>`
 
 ---
 
